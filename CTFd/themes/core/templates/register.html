@@ -6,7 +6,7 @@
 {% block content %}
 <div class="jumbotron">
 	<div class="container">
-		<h1>Register</h1>
+		<h1>Регистрация</h1>
 	</div>
 </div>
 <div class="container">
@@ -29,21 +29,21 @@
 					<b>{{ form.name.label }}</b>
 					{{ form.name(class="form-control", value=name) }}
 					<small class="form-text text-muted">
-						Your username on the site
+						Введите Ваше ФИО и номер группы в формате (Иванов.И.И УБ-22)
 					</small>
 				</div>
 				<div class="form-group">
 					<b>{{ form.email.label }}</b>
 					{{ form.email(class="form-control", value=email) }}
 					<small class="form-text text-muted">
-						Never shown to the public
+						-
 					</small>
 				</div>
 				<div class="form-group">
 					<b>{{ form.password.label }}</b>
 					{{ form.password(class="form-control", value=password) }}
 					<small class="form-text text-muted">
-						Password used to log into your account
+						Укажите пароль
 					</small>
 				</div>
 				{{ form.nonce() }}
@@ -60,7 +60,7 @@
 				<div class="row pt-3">
 					<div class="col-md-12 text-center">
 						<small class="text-muted text-center">
-							By registering, you agree to the
+							Региструруясь вы соглашаетесь с
 							<a href="{{ Configs.privacy_link }}" rel="noopener" target="_blank">privacy policy</a>
 							and <a href="{{ Configs.tos_link }}" rel="noopener" target="_blank">terms of service</a>
 						</small>
