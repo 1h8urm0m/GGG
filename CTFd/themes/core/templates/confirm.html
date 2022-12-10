@@ -15,20 +15,20 @@
 				{% include "components/errors.html" %}
 
 				<h5 class="text-center">
-					We've sent a confirmation email to your email address.
+					Мы отправили вам письмо с подтверждением на почту.
 				</h5>
 
 				<br>
 
 				<h5 class="text-center">
-					Please click the link in that email to confirm your account.
+					Пожалуйста, нажмите на ссылку в этом письме, чтобы подтвердить свою учетную запись.
 				</h5>
 
 				<br>
 
 				<h5 class="text-center">
-					If the email doesn’t arrive, check your spam folder or
-					contact an administrator to manually verify your account.
+					Если письмо не приходит, проверьте папку со спамом или
+				обратитесь к администратору, чтобы вручную подтвердить свою учетную запись.
 				</h5>
 
 				<hr>
@@ -41,7 +41,7 @@
 						</div>
 						<div class="col-md-6">
 							<a href="{{ url_for('views.settings') }}" class="btn btn-md btn-secondary btn-outlined w-100">
-								Change Email Address
+								Изменить адрес электронной почты.
 							</a>
 						</div>
 						{{ form.nonce() }}
